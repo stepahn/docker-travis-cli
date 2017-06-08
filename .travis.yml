@@ -4,4 +4,4 @@ services:
 - docker
 
 script:
-- docker build travis-cli .
+- docker build -t travis-cli . && docker run travis-cli version
