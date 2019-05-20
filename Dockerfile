@@ -5,7 +5,7 @@ RUN apk add --no-cache --virtual \
       build-base \
     && true
 
-ARG TRAVIS_VERSION=1.8.10.travis.953.11
+ARG TRAVIS_VERSION=1.8.11.travis.1001.9
 RUN gem install travis -v $TRAVIS_VERSION
 
 RUN rm -rf /usr/local/bundle/cache/*.gem \
